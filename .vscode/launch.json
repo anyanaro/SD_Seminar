@@ -7,7 +7,7 @@
             "type": "al",
             "request": "launch",
             "name": "nav",
-            "server": "http://nav",
+            "server": "http://nav:8080",
             "port": 17049,
             "serverInstance": "BC130",
             "authentication": "Windows", 
