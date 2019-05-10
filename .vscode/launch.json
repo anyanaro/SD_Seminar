@@ -1,8 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
-
         {
             "type": "al",
             "request": "launch",
@@ -10,7 +8,7 @@
             "server": "http://nav:8080",
             "port": 17049,
             "serverInstance": "BC130",
-            "authentication": "Windows", 
+            "authentication": "Windows",
             "startupObjectType": "Page",
             "breakOnError": true,
             "schemaUpdateMode": "Recreate"

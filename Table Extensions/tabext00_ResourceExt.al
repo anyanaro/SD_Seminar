@@ -1,33 +1,36 @@
-tableextension 50100 "CSD ResourceExt" extends Resource 
-// CSD1.00 - 2019-03-25 - A.  N  . Veloper
+tableextension 50100 "CSD ResourceExt" extends Resource
 {
+    // CSD1.00 - 2019-04-07 - D. E. Veloper
     fields
     {
         modify("Profit %")
-{
-    trigger OnAfterValidate()
-    begin
-     Rec.TestField("Unit Cost"); 
-    end;
-}
+        {
+            trigger OnAfterValidate()
+            begin
+                Rec.TestField("Unit Cost");
+            end;
+        }
         modify(Type)
         {
-          OptionCaption ='Instructor,Room';
+            OptionCaption = 'Instructor,Room';
         }
-        field(50101;"CSD Resource Type"; Option)
+        field(50101; "CSD Resource Type"; Option)
         {
-            Caption='Resource Type';
-            OptionMembers="Internal","External";
-            OptionCaption ='Internal,External';
+            Caption = 'CSD Resource Type';
+            OptionMembers = "Internal","External";
+            OptionCaption = 'Internal,External';
         }
-        field(50102;"CSD Maximum Participants";Integer)
+        field(50102; "CSD Maximum Participants"; Integer)
         {
-            Caption='Maximum Participants';
+            Caption = 'Maximum Participants';
         }
-        field(50103;"CSD Quantity Per Day";Decimal)
+        field(50103; "CSD Quantity Per Day"; Decimal)
         {
-            Caption='Quantity Per Day';
+            Caption = 'Quantity Per Day';
         }
+
     }
-    
+
+    var
+        myInt: Integer;
 }
