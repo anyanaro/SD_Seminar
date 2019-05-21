@@ -1,4 +1,4 @@
-tableextension 50100 "CSD ResourceExt" extends Resource
+tableextension 50130 "CSD ResourceExt" extends Resource
 {
     // CSD1.00 - 2019-04-07 - D. E. Veloper
     fields
